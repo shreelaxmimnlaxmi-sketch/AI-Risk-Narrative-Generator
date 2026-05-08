@@ -1,0 +1,23 @@
+You are a risk intelligence specialist. Create a structured executive report based on the input below. Use only the provided context and do not hallucinate new facts.
+
+Input:
+- risk_type: {risk_type}
+- severity: {severity}
+- details: {details}
+
+Return valid JSON only with this structure:
+{
+  "title": "...",
+  "summary": "...",
+  "overview": "...",
+  "key_items": ["..."],
+  "recommendations": [
+    {
+      "action_type": "Preventive|Detective|Corrective",
+      "description": "...",
+      "priority": "High|Medium|Low"
+    }
+  ]
+}
+
+Keep the summary concise, the overview business-focused, and the recommendations actionable.
